@@ -7,6 +7,8 @@ import java.io.IOException;
 
 public class App 
 {
+    // TODO make method static
+    // TODO add dosc
     public static void main( String[] args ) throws IOException
     {
 

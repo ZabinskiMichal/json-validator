@@ -43,8 +43,8 @@ public class ResourceFieldVerifier implements JsonVerifier {
 
         }catch (FileNotFoundException e){
             throw new IllegalArgumentException("File does not exists: " + filePath, e);
-        }catch (IOException e) {
-            throw new IllegalArgumentException("Error in reading file: " + filePath, e);
+        }catch (IllegalArgumentException e) {
+            throw new IllegalArgumentException("No statement node: " + filePath, e);
         }catch (InvalidFileExtensionException e){
             throw new IllegalArgumentException("Invalid extension of file: " + filePath);
         }
