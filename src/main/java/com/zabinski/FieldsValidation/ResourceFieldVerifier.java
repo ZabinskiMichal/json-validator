@@ -27,7 +27,7 @@ public class ResourceFieldVerifier implements JsonVerifier {
 
             ObjectMapper objectMapper = new ObjectMapper();
             JsonNode rootNote = objectMapper.readTree(new File(filePath));
-            JsonNode statements = rootNote.path("PolicyDocument").path("Statement");
+            JsonNode statements = rootNote.path("PolicyDocument").path("Statement"); //PolicyDocument is required field in IAM Role Policy format
 
             if (!statements.isArray()){
                 throw new IllegalArgumentException("Statement element is expected to be an array");
