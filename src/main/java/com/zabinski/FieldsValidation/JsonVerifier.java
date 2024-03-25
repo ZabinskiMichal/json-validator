@@ -1,4 +1,4 @@
-package com.zabinski;
+package com.zabinski.FieldsValidation;
 
 import java.io.IOException;
 

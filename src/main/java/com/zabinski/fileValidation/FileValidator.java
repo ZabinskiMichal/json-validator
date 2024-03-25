@@ -1,4 +1,4 @@
-package com.zabinski;
+package com.zabinski.fileValidation;
 
 import com.zabinski.exceptions.InvalidFileExtensionException;
 

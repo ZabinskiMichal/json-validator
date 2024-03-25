@@ -1,5 +1,8 @@
 package com.zabinski;
 
+import com.zabinski.FieldsValidation.JsonVerifier;
+import com.zabinski.FieldsValidation.ResourceFieldVerifier;
+
 import java.io.IOException;
 
 public class App 

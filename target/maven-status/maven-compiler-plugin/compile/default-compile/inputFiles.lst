@@ -1,5 +1,5 @@
-/Users/michalzabinski/Desktop/json-validator/src/main/java/com/zabinski/ResourceFieldVerifier.java
-/Users/michalzabinski/Desktop/json-validator/src/main/java/com/zabinski/JsonVerifier.java
+/Users/michalzabinski/Desktop/json-validator/src/main/java/com/zabinski/fileValidation/FileValidator.java
 /Users/michalzabinski/Desktop/json-validator/src/main/java/com/zabinski/App.java
-/Users/michalzabinski/Desktop/json-validator/src/main/java/com/zabinski/FileValidator.java
+/Users/michalzabinski/Desktop/json-validator/src/main/java/com/zabinski/FieldsValidation/ResourceFieldVerifier.java
 /Users/michalzabinski/Desktop/json-validator/src/main/java/com/zabinski/exceptions/InvalidFileExtensionException.java
+/Users/michalzabinski/Desktop/json-validator/src/main/java/com/zabinski/FieldsValidation/JsonVerifier.java

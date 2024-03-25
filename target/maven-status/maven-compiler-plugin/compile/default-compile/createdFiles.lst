@@ -1,5 +1,5 @@
 com/zabinski/exceptions/InvalidFileExtensionException.class
-com/zabinski/JsonVerifier.class
-com/zabinski/ResourceFieldVerifier.class
+com/zabinski/FieldsValidation/JsonVerifier.class
+com/zabinski/FieldsValidation/ResourceFieldVerifier.class
 com/zabinski/App.class
-com/zabinski/FileValidator.class
+com/zabinski/fileValidation/FileValidator.class

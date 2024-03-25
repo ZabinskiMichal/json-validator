@@ -1,14 +1,15 @@
-package com.zabinski;
+package com.zabinski.FieldsValidation;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.zabinski.fileValidation.FileValidator;
 import com.zabinski.exceptions.InvalidFileExtensionException;
 
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
-public class ResourceFieldVerifier implements JsonVerifier{
+public class ResourceFieldVerifier implements JsonVerifier {
 
 
     /**
