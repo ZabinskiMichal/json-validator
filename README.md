@@ -5,7 +5,8 @@ This tool checks if JSON files, especially AWS IAM Role Policy files, follow spe
 
 ## Quick Start
 
-You need Java installed to run this tool. You can download the `.jar` file from the GitHub releases.
+You need Java installed to run this tool. You can download the `json-validator-1.0-SNAPSHOT.jar
+` file from the target folder.
 
 ### Run It
 After downloading `json-validator.jar`, open a terminal and run:
