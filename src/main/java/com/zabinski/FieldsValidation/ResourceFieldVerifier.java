@@ -2,6 +2,7 @@ package com.zabinski.FieldsValidation;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.zabinski.exceptions.ResourceFieldNotFoundException;
 import com.zabinski.fileValidation.FileValidator;
 import com.zabinski.exceptions.InvalidFileExtensionException;
 
@@ -35,11 +36,15 @@ public class ResourceFieldVerifier implements JsonVerifier {
 
             for (JsonNode statement : statements){
                 JsonNode resourceNode = statement.path("Resource");
+                if (resourceNode.isMissingNode()){
+                    throw new ResourceFieldNotFoundException("Resource field not found in this file: " + filePath);
+                }
                 if(resourceNode.isTextual() && "*".equals(resourceNode.asText().trim())){
                     return false;
                 }
             }
             return true;
+
 
         }catch (FileNotFoundException e){
             throw new IllegalArgumentException("File does not exists: " + filePath, e);

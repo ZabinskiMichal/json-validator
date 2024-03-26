@@ -7,8 +7,11 @@ import java.io.IOException;
 
 public class App 
 {
-    // TODO make method static
+    // TODO add read me
     // TODO add dosc
+    //TODO add instruction how to run
+    //TODO check edge cases
+
     public static void main( String[] args ) throws IOException
     {
 
@@ -22,8 +25,6 @@ public class App
         try{
             boolean isValid = verifyAsterisk.verify(args[0]);
             System.out.println("Verification result: " + isValid + "\n");
-        }catch (IllegalArgumentException | IOException e) {
-            System.err.println("Error in file verification " + e.getMessage());
         }catch (Exception e){
             System.err.println("Other error: " + e.getMessage());
             e.getStackTrace();

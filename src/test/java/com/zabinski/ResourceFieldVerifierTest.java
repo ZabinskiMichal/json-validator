@@ -2,6 +2,7 @@ package com.zabinski;
 
 import com.zabinski.FieldsValidation.JsonVerifier;
 import com.zabinski.FieldsValidation.ResourceFieldVerifier;
+import com.zabinski.exceptions.ResourceFieldNotFoundException;
 import org.junit.Test;
 import org.junit.jupiter.api.Assertions;
 
@@ -35,14 +36,9 @@ public class ResourceFieldVerifierTest {
     }
 
     @Test
-    public void jsonWithoutResultFieldShouldReturnTrue(){
+    public void jsonWithoutResultFieldShouldThrowResourceFieldNotFoundException(){
         String filePath = "json-files/withoutResourceField.json";
-        try {
-            boolean result = verifier.verify(filePath);
-            Assertions.assertTrue(result, "File should be valid");
-        } catch (IOException e){
-            Assertions.fail("IOException should not be thrown for this file");
-        }
+        Assertions.assertThrows(ResourceFieldNotFoundException.class, () -> verifier.verify(filePath), "ResourceFieldNotFoundException should be thrown");
     }
 
     @Test
